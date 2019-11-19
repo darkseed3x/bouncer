@@ -64,7 +64,7 @@ body {
   display: flex;
 }
 
-.header {
+header {
   height: 216px;
 }
 
@@ -90,11 +90,11 @@ body {
   margin-right: 20px;
 }
 
-.cart-link,
-.profile-link {
+.profile-link,
+.cart-link {
   font-size: 14px;
-  color: #22262a;
   text-decoration: none;
+  color: #22262a;
   margin-right: 41px;
 }
 
@@ -114,6 +114,7 @@ body {
 .cart-total {
   opacity: .5;
   margin-left: 10px;
+  font-size: 14px;
 }
 
 .logo-and-nav-container {
@@ -130,7 +131,7 @@ body {
   padding-bottom: 36px;
 }
 
-.navigation {
+nav {
   width: 660px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -144,7 +145,7 @@ body {
   color: #22262a;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link.active, .nav-link:hover {
   color: #33A0FF;
 }
 
@@ -181,7 +182,7 @@ body {
   line-height: 22px;
   font-size: 14px;
   color: white;
-  border-bottom: 3px;
+  border-bottom: 3px solid white;
 }
 
 .carousel-section .slide-img {
@@ -205,8 +206,8 @@ body {
   background-color: #F6F7F8;
   color: #22262a;
   text-decoration: none;
-  padding-top: 36px;
-  padding-bottom: 30px;
+  padding: 36px 16px 0 30px;
+  padding-left: 30px;
   position: relative;
 }
 
@@ -219,12 +220,26 @@ body {
   width: 220px;
 }
 
+.gadget-card:first-child .card-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.gadget-card:first-child .price {
+  opacity: .75;
+}
+
 .gadget-card:last-child {
   background-color: #C1C8CE;
 }
 
 .gadget-card:last-child .card-text {
   width: 160px;
+}
+
+.gadget-card:last-child .price {
+  opacity: .75;
 }
 
 .gadget-card .card-title {
@@ -239,12 +254,5 @@ body {
 
 .gadget-card .price {
   font-size: 24px;
-  opacity: .75;
-}
-
-.gadget-card .card-image {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 /*# sourceMappingURL=site.css.map */

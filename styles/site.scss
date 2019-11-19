@@ -127,9 +127,10 @@ nav {
     background-color: #F6F7F8;
     color: $primary-color;
     text-decoration: none;
-    padding: 36px 16px 0 30px;
+    padding: 36px 16px 20px 30px;
     padding-left: 30px;
     position: relative;
+    overflow: hidden;
     
 
     &:first-child {
@@ -177,5 +178,21 @@ nav {
     .price {
         font-size: 24px;
     }
-   
+
+   .card-container{
+       justify-content: space-between;
+   }
+   .card-image-oculus{
+       position: absolute;
+   }
+   .card-image-gopro{
+    position: absolute;
+    bottom: 0;
+    right: -26px;
+   }
+}
+.card2{
+    flex-direction: column;
+    justify-content: flex-end;
+    
 }

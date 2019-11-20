@@ -206,9 +206,10 @@ nav {
   background-color: #F6F7F8;
   color: #22262a;
   text-decoration: none;
-  padding: 36px 16px 0 30px;
+  padding: 36px 16px 20px 30px;
   padding-left: 30px;
   position: relative;
+  overflow: hidden;
 }
 
 .gadget-card:first-child {
@@ -254,5 +255,31 @@ nav {
 
 .gadget-card .price {
   font-size: 24px;
+}
+
+.gadget-card .card-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gadget-card .card-image-oculus {
+  position: absolute;
+}
+
+.gadget-card .card-image-gopro {
+  position: absolute;
+  bottom: 0;
+  right: -26px;
+}
+
+.card2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=site.css.map */

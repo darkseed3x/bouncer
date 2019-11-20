@@ -43,7 +43,7 @@ body {
   margin: 0 auto;
 }
 
-.font-semibold, .nav-link {
+.font-semibold, .nav-link, .best-seller-section .best-seller-title, .best-seller-items-container .best-seller-items-title {
   font-weight: 600;
 }
 
@@ -222,7 +222,6 @@ nav {
 }
 
 .gadget-card:first-child .card-image {
-  position: absolute;
   right: 0;
   bottom: 0;
 }
@@ -263,12 +262,11 @@ nav {
           justify-content: space-between;
 }
 
-.gadget-card .card-image-oculus {
+.gadget-card img {
   position: absolute;
 }
 
 .gadget-card .card-image-gopro {
-  position: absolute;
   bottom: 0;
   right: -26px;
 }
@@ -281,5 +279,168 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.best-seller-section {
+  margin-top: 100px;
+}
+
+.best-seller-section .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.best-seller-section .best-seller-title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.best-seller-section .navigation-best-seller {
+  margin: 17px 0;
+  width: 478px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.best-seller-section .nav-link {
+  text-transform: capitalize;
+}
+
+.best-seller-section .nav-link:hover {
+  border-bottom: solid 3px #33A0FF;
+}
+
+.product-image-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.product-image-container .product-controls {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -1;
+}
+
+.product-image-container .product-controls button {
+  width: 46px;
+  height: 46px;
+  border: 2px solid #33A0FF;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-image-container .product-controls .like {
+  background-image: url(../sources/hearts.svg);
+}
+
+.product-image-container .product-controls .add-to-cart {
+  background-image: url(../sources/cart_2.svg);
+}
+
+.product-image-container:hover img {
+  opacity: 0.1;
+  cursor: pointer;
+}
+
+.best-seller-items-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.best-seller-items-container .item {
+  position: relative;
+  border: solid 3px #f6f7f8;
+  padding: 30px 17px;
+  margin: 15px 0;
+}
+
+.best-seller-items-container .best-seller-items-title {
+  text-align: center;
+  font-size: 14px;
+  color: #22262a;
+  padding-top: 15px;
+  border-top: 3px solid #f6f7f8;
+  margin-bottom: 28px;
+}
+
+.best-seller-items-container .stars {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 16px;
+}
+
+.best-seller-items-container .stars img {
+  margin: 0 3px;
+}
+
+.best-seller-items-container .stars img:hover {
+  cursor: pointer;
+}
+
+.best-seller-items-container .price-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.best-seller-items-container .price-container span {
+  margin: 0 6.5px;
+}
+
+.best-seller-items-container .new-price {
+  color: #FF6875;
+}
+
+.best-seller-items-container .old-price {
+  position: relative;
+  color: #c1c8ce;
+}
+
+.best-seller-items-container .old-price::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: solid 1.5px #5d656b;
+  top: 9px;
+}
+
+.best-seller-items-container .hot {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background-color: #ff4858;
+  border-radius: 1px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 20px;
+  top: 10px;
+  left: 10px;
+}
+
+.best-seller-items-container .hot-active {
+  display: block;
 }
 /*# sourceMappingURL=site.css.map */

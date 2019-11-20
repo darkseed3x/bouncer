@@ -2,49 +2,37 @@
 // firstQuest();
 //secondQuest();
 //thirdQuest(); 
-//fourthQuest();
-//fifthQuest();
 
+fourthAndFifthQuest();
 
-function fifthQuest() {
+function fourthAndFifthQuest() {
 
-    let arr = new Array(30);
-    let totalSum = 0;
+    let arr = new Array(9);
+    let max = Number.MIN_VALUE;
+    let min = Number.MAX_VALUE;
+    let iMax, iMin;
+    let totalOddSum = 0;
 
     for (let index = 0; index < arr.length; index++) {
         arr[index] = Math.floor(Math.random() * 100) + 1;
+        if (index % 2 !== 0) {
+            totalOddSum += arr[index];
+        }
+        if (arr[index] > max) {
+            max = arr[index];
+            iMax = index;
+        }
+        if (arr[index] < min) {
+            min = arr[index];
+            iMin = index;
+        }
     }
-    for (let index = 1; index < arr.length; index += 2) {
-        totalSum += arr[index];
-    }
-    alert(`Сумма нечётных элементов = ${totalSum}`);
 
-}
-
-function fourthQuest() {
-
-let arr = new Array(30);
-let max = Number.MIN_VALUE;
-let min = Number.MAX_VALUE;
-let iMax, iMin;
-
-for (let index = 0; index < arr.length; index++) {
-    arr[index] = Math.floor(Math.random() * 100) + 1;
-}
-for (let index = 0; index < arr.length; index++) {
-    if(arr[index] > max){
-        max = arr[index];
-        iMax = index;
-    }
-    if(arr[index] < min){
-        min = arr[index];
-        iMin = index;
-    }
-}
-alert(`Максимальный элемент ${max}
+    alert(`Максимальный элемент ${max}
 Минимальный элемент ${min}
 Индекс макимального элементы ${iMax}
-Индекс минимаьлного элемента ${iMin}`);
+Индекс минимаьлного элемента ${iMin}
+Сумма нечётных элементов = ${totalOddSum}`);
 }
 
 function thirdQuest() {

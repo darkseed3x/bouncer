@@ -213,6 +213,7 @@ nav {
     }
     .nav-link{
         text-transform: capitalize;
+        border-bottom: solid 3px white;
         &:hover {
             border-bottom: solid 3px $active-color;
         }

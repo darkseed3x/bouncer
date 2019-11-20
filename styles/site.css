@@ -310,6 +310,7 @@ nav {
 
 .best-seller-section .nav-link {
   text-transform: capitalize;
+  border-bottom: solid 3px white;
 }
 
 .best-seller-section .nav-link:hover {

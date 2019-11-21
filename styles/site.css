@@ -313,7 +313,7 @@ nav {
   border-bottom: solid 3px white;
 }
 
-.best-seller-section .nav-link:hover {
+.best-seller-section .nav-link.active, .best-seller-section .nav-link:hover {
   border-bottom: solid 3px #33A0FF;
 }
 

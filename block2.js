@@ -8,16 +8,20 @@ tenth();
 function tenth() {
     const readline = require('readline-sync');
 
-    let number = readline.question("Enter a number\n");
-    let result = '';
 
-    for (let i = number.length - 1; i >= 0; i--) {
+    let number = +readline.question("Enter a number\n");
+    let result = 0;
 
-        result += number.charAt(i);
+    while (number !== 0) {
+        if (result !== 0) {
+            result *= 10;
+        }
+        result += number % 10;
+        number = Math.floor(number / 10);
 
     }
 
-    
+
     console.log(result);
 }
 

@@ -1,9 +1,9 @@
 'use strict';
 // eleventh();
 // twelfth();
-// thirteenth();
+thirteenth();
 // fourteenth();
-fifteenth();
+// fifteenth();
 
 function fifteenth() {
 
@@ -61,13 +61,13 @@ function fourteenth() {
 
     for (let i = 0; i < array.length; i++) {
 
-        for (let j = array.length - 1; j >= i; j--) {
+        for (let j = 0; j < array.length; j++) {
 
-            if (array[j] < array[j - 1]) {
+            if (array[j] > array[j + 1]) {
 
                 swap = array[j];
-                array[j] = array[j - 1];
-                array[j - 1] = swap;
+                array[j] = array[j + 1];
+                array[j + 1] = swap;
             }
 
         }
@@ -80,17 +80,18 @@ function fourteenth() {
 
 function thirteenth() {
 
-    let array = fillArray(5);
-    let counter = (Math.round((array.length) / 2));
+    let array = fillArray(21);
+    let counter = (Math.floor((array.length) / 2));
 
     console.log(array);
 
-    while (counter !== 0) {
-        array.push(array.shift(0));
-        counter--;
-    }
-    //    let arraResult = array.slice(array.length/2).concat(array.slice(0,array.length/2));
-    console.log(array);
+       let arraySwap1 = array.splice(counter + 1);
+       let arraySwap2 = array.splice(0, counter)
+
+       let arrayResult = arraySwap1.concat(array,arraySwap2);
+       
+       console.log(counter);
+    console.log(arrayResult);
 }
 
 function twelfth() {

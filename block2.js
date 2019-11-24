@@ -1,21 +1,23 @@
 'use strict';
 
 // sixth();
-seventh();
+// seventh();
 // eighth();
 // ninth();
-// tenth();
+tenth();
 function tenth() {
     const readline = require('readline-sync');
 
-    let number = +readline.question("Enter a number\n");
+    let number = readline.question("Enter a number\n");
     let result = '';
 
-    while (number !== 0) {
-        result += number % 10;
-        number = Math.floor(number / 10);
+    for (let i = number.length - 1; i >= 0; i--) {
+
+        result += number.charAt(i);
 
     }
+
+    
     console.log(result);
 }
 
@@ -50,15 +52,15 @@ function eighth() {
 function seventh() {
     const readline = require('readline-sync');
 
-    let number = 25;/*+readline.question("Enter a number\n");*/
+    let number = +readline.question("Enter a number\n");
     let isPrime = true;
 
     for (let i = 1; i < number; i++) {
 
         if (Math.pow(i, 2) < number && Math.pow(i + 1, 2) > number) {
-            console.log(`${i} is sqrt of number`)
+            console.log(`${i} is sqrt of number(bruteforce)`)
         } else if (Math.pow(i, 2) === number) {
-            console.log(` ${i} is sqrt of number`)
+            console.log(`${i} is sqrt of number(bruteforce)`)
         }
 
         if (i === 1) {
@@ -75,19 +77,28 @@ function seventh() {
     } else {
         console.log(`number ${number} is not prime`)
     }
-    console.log(BinaryRoot(number));
-    function BinaryRoot(number){
-        let i = number;
-        do{
-            i = Math.floor(i/2);
-            if(Math.pow(i, 2) < number){
-                i++;
-            }
-        }while(Math.pow(i, 2) === number);
-        return i;
 
+    let i = number;
+
+    console.log(`${BinaryRoot(number)} is sqrt of number(Binary)`);
+
+}
+function BinaryRoot(digit) {
+    let l = 0, p = 0, attempt = 0;
+    let r = digit;
+
+
+    while (true) {
+        p = (l + r) / 2;
+        attempt = p * p;
+
+        if (Math.abs(digit - attempt) < 1)
+            return Math.floor(p);
+        else if (attempt > digit)
+            r = p;
+        else
+            l = p;
     }
-
 }
 
 function sixth() {

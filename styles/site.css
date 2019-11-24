@@ -34,6 +34,7 @@
 }
 
 body {
+  margin: 0;
   font-family: 'Proxima Nova Rg';
   color: #22262a;
 }
@@ -353,11 +354,6 @@ nav {
   background-image: url(../sources/cart_2.svg);
 }
 
-.product-image-container:hover img {
-  opacity: 0.1;
-  cursor: pointer;
-}
-
 .best-seller-items-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -371,6 +367,11 @@ nav {
   border: solid 3px #f6f7f8;
   padding: 30px 17px;
   margin: 15px 0;
+  cursor: pointer;
+}
+
+.best-seller-items-container .item:hover img {
+  opacity: 0.1;
 }
 
 .best-seller-items-container .best-seller-items-title {

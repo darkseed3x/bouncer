@@ -249,10 +249,7 @@ nav {
             background-image: url(../sources/cart_2.svg) ;
         }
     }
-    &:hover img{
-        opacity: 0.1;
-        cursor: pointer;
-    }
+    
 }
 .best-seller-items-container{
     flex-wrap: wrap;
@@ -264,6 +261,12 @@ nav {
         border: solid 3px #f6f7f8;
         padding: 30px 17px;
         margin: 15px 0;
+        cursor: pointer;
+
+        &:hover img{
+            opacity: 0.1;
+            
+        }
     }
 
     .best-seller-items-title{

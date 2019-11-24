@@ -34,6 +34,7 @@
 }
 
 body {
+  margin: 0;
   font-family: 'Proxima Nova Rg';
   color: #22262a;
 }

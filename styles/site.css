@@ -455,6 +455,10 @@ nav {
   border-top: 3px solid #f6f7f8;
 }
 
+.footer .info-block {
+  width: 268px;
+}
+
 .footer .row-info-block {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -462,8 +466,10 @@ nav {
 }
 
 .footer .text-block {
+  margin-top: 24px;
   font-size: 12px;
   color: #22262a;
+  line-height: 1.67;
 }
 
 .footer .copyright-block {

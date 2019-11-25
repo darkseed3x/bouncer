@@ -354,6 +354,12 @@ nav {
         color: $primary-color;
         line-height: 1.67;
     }
+    .title-block{
+        color: $primary-color;
+        font-size: 18px;
+        @extend .font-semibold;
+        line-height: 1.56;
+    }
     .copyright-block{
         margin-top:44px;
         border-top: 3px solid $border-color;

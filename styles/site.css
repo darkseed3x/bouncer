@@ -44,7 +44,7 @@ body {
   margin: 0 auto;
 }
 
-.font-semibold, .nav-link, .best-seller-section .best-seller-title, .best-seller-items-container .best-seller-items-title {
+.font-semibold, .nav-link, .best-seller-section .best-seller-title, .best-seller-items-container .best-seller-items-title, .footer .title-block {
   font-weight: 600;
 }
 
@@ -470,6 +470,12 @@ nav {
   font-size: 12px;
   color: #22262a;
   line-height: 1.67;
+}
+
+.footer .title-block {
+  color: #22262a;
+  font-size: 18px;
+  line-height: 1.56;
 }
 
 .footer .copyright-block {

@@ -2,6 +2,31 @@
 // seventeenth();
 // eightteenth();
 // nineteenth();
+twentieth();
+function twentieth(){
+    let matrix1 = sixteenth(4, 4);
+    let matrix2 = sixteenth(4, 4);
+
+    if (matrix1[0].length !== matrix2.length) {
+        return;
+    }
+
+    let matrixResult = sixteenth(matrix2.length, matrix2[0].length);
+
+    for (let k = 0; k < matrix2[0].length; k++) {
+        for (let x = 0, line = 0; x < matrix1.length; x++) {
+            for (let y = 0; y < matrix1[0].length; y++) {
+                line += matrix1[x][y] * matrix2[y][k];
+
+            }
+            matrixResult[x][k] = line;
+            line = 0;
+
+        }
+    }
+    console.log(matrixResult);
+}
+
 function nineteenth() {
 
     let columns = 4, rows = 3;

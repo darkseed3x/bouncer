@@ -97,7 +97,7 @@ function BinaryRoot(digit) {
         attempt = p * p;
 
         if (Math.abs(digit - attempt) < 1)
-            return Math.floor(p);
+            return Math.round(p);
         else if (attempt > digit)
             r = p;
         else

@@ -1,8 +1,8 @@
 // console.log(sixteenth(4,5));
 // seventeenth();
 // eightteenth();
-// nineteenth();
-twentieth();
+nineteenth();
+// twentieth();
 function twentieth(){
     let matrix1 = sixteenth(4, 4);
     let matrix2 = sixteenth(4, 4);
@@ -29,7 +29,7 @@ function twentieth(){
 
 function nineteenth() {
 
-    let columns = 4, rows = 3;
+    let columns = 4, rows = 4;
     let matrix = new Array();
     let s = 1;
 
@@ -44,7 +44,6 @@ function nineteenth() {
         }
     }
 
-    console.log(matrix);
 
     for (let y = 0; y < columns; y++) {
         matrix[0][y] = s;

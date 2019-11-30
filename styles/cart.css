@@ -64,4 +64,10 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
+.link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #22262a;
+}
 /*# sourceMappingURL=cart.css.map */

@@ -20,12 +20,8 @@ header {
 .top-menu .dd:first-child {
     margin-right: 20px;
 }
-
 .profile-link,
 .cart-link {
-    font-size: 14px;
-    text-decoration: none;
-    color: $primary-color;
     margin-right: 41px;
 }
 
@@ -335,18 +331,14 @@ nav {
 .footer{
     margin-top:140px;
    
-    
-    .container{
-        padding-top: 56px;
-   
-        border-top: 3px solid $border-color;
-    }
     .info-block{
         width: 268px;
     }
 
     .row-info-block{
         justify-content: space-between;
+        padding-top: 56px;
+        border-top: 2px solid $border-color;
     }
     .text-block{
         margin-top: 24px;
@@ -359,10 +351,41 @@ nav {
         font-size: 18px;
         @extend .font-semibold;
         line-height: 1.56;
+        margin: 0;
+    }
+    .social-nets{
+        margin-top: 26px;
+    }
+    .twitter{
+        margin: 0 40px;
+    }
+    .row-map-block{
+        margin-top: 56px;
+        padding-top: 45px;
+        border-top: 2px solid $border-color;
+        justify-content: space-between;
+    }
+    .map-block{
+        
+        line-height: 2.3;
+    }
+    .links{
+        margin-top: 22px;
     }
     .copyright-block{
         margin-top:44px;
-        border-top: 3px solid $border-color;
+        border-top: 2px solid $border-color;
         height: 92px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .payments{
+        justify-content: space-between;
+        width: 210px;
+    }
+    .copyright{
+        font-size: 14px;
+        line-height: 1.71;
+        color: #c1c8ce;
     }
 }
